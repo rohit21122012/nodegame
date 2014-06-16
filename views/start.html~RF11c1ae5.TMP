@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--For BOOTSRAP-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compaible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rohit">
+    <meta name="description" content="Game">
+    <link href="boot/css/bootstrap.css" rel="stylesheet">
+    
+    <link href="carousel.css" rel="stylesheet">
+    <!--For BOOTSRAP-->
+
+    <title> Messenger</title>
+    <!--For SOCKET    --><script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+    <script src ="socket.io/socket.io.js"></script>
+    <script src = 'script.js'></script>
+    <!--For SOCKET --> 
+
+
+  </head>
+  <body>
+    <!--navbar-->
+   <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </div><!-- /.navbar -->
+    <!--navbar-->
+
+
+<br><br><br>
+<!-- Carousel
+    ================================================== -->
+
+<div class="container" style="border-style:solid;width:800px; height: 580px;float:left;margin:35px">
+    <div id="myCarousel" class="carousel slide" style="width:300px;float:left;margin:30px; border-style:groove" >
+     
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/av1.png"  alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+                           
+                            <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/av2.png"   alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+             
+              <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/av3.png"  alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              
+              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+    
+
+    <div class = "container">
+        <form class="form-signin" style="width:300px; margin: 100px 30px; float:none">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="text" class="form-control" id = 'pseudoInput' placeholder="Email address" autofocus>
+        <input type="password" class="form-control" placeholder="Password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" id = 'pseudoSet' type="submit">Sign in</button>
+      </form>
+    </div>
+</div>
+<div class="container" style="border-style:solid;width:400px;float:left;margin:35px; height: 580px;">
+      <form class="form-signin" style="width:300px; float: left; margin: 100px 30px">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="text" class="form-control" id = 'pseudoInput' placeholder="Email address" autofocus>
+        <input type="password" class="form-control" placeholder="Password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember mes
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" id = 'pseudoSet' type="submit">Sign in</button>
+      </form>
+</div>
+
+ 
+
+
+<!--image
+<img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Card"> 
+image-->  
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    
+     <script src="holder.js"></script>
+      <script src="bootstrap.min.js"></script>
+     <script src="jquery.js"></script>
+</body>
+</html>
